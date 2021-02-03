@@ -10,6 +10,9 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
+def power(x, y):
+    return x ** y
+
 def calculate (operator, parameterA, parameterB):
     result = 0
     if((operator == '*') or (operator == 'x')):
@@ -20,6 +23,8 @@ def calculate (operator, parameterA, parameterB):
         result = subtract(parameterA, parameterB)
     elif(operator == '/'):
         result = divide(parameterA, parameterB)
+    elif(operator == '^'):
+        result = power(parameterA, parameterB)
     else:
         result = 0
     return result
